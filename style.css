@@ -37,6 +37,11 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+.ganhou {
+    font-size: 64px;
+    width: 320px;
+    text-align: center;
+}
 
 @media (min-width: 600px) {
     .small-container {
@@ -55,5 +60,10 @@ button {
     }
     h1 {
         font-size: 50px;
+    }
+    .ganhou {
+        font-size: 120px;
+        text-align: center;
+        width: 600px;
     }
 }

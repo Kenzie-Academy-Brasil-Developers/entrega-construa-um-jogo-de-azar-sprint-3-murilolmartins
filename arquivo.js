@@ -112,7 +112,13 @@ small_container.addEventListener("click", function(event){
     const selecioado = document.querySelectorAll(".selecionado");
     const check = document.querySelectorAll(".check")
     if (arrayEquals(selecioado , check) === true) {
-        alert("Voce Ganhou!!")
+        const ganhou = document.createElement("p");
+        ganhou.innerText = "VOCÊ GANHOU!!"
+        ganhou.classList.add("ganhou")
+        const tabuleiro = document.querySelector(".small-container");
+        tabuleiro.innerHTML = ""
+        tabuleiro.appendChild(ganhou)
+        
 
     }
     
