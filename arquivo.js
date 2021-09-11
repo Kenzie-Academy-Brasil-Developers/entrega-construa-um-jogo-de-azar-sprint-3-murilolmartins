@@ -63,13 +63,13 @@ function criandoJogo() {
             for (let k = 0 ; k < palavra123[j].length ; k++) {
                 let id = Number(l.id) + k
                 const u = document.getElementById(id);
-                u.innerText = palavra123[j][k]
-                console.log(u.parentNode.classList)
+                console.log(u.parentNode.classList.length)
                 if (u.parentNode.classList.length === 2) {
                     linha = true
                     break
                 }
                 else {
+                    u.innerText = palavra123[j][k]
                     u.parentNode.classList.add("check");
                     linha = false
                 }
@@ -112,7 +112,7 @@ small_container.addEventListener("click", function(event){
     const selecioado = document.querySelectorAll(".selecionado");
     const check = document.querySelectorAll(".check")
     if (arrayEquals(selecioado , check) === true) {
-        alert("Voce ganhou")
+        alert("Voce Ganhou!!")
 
     }
     
