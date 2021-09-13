@@ -92,7 +92,7 @@ function arrayEquals(a,b) {
     return true
      
 }
-
+criandoJogo()
 const container = document.querySelector(".small-container")
 const iniciar = document.querySelector("button");
 iniciar.addEventListener("click",function() {
